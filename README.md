@@ -39,7 +39,5 @@ All code and example machines created by Jason Moore.
 ## Examples
 Here are some examples of the Turing machine simulator in action:
 
-![Example loading machine](./loadingExample.png)
-Loading a machine from a file and viewing its definition
-![Example running machine](./runningExample.png)
-Simulating the machine (step once and run all)
+![Example loading machine](./loadingExample.png "Loading a machine from a file and viewing its definition")
+![Example running machine](./runningExample.png "Simulating the machine: step once and run all")
