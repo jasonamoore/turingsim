@@ -7,6 +7,7 @@ Run `main` to begin the simulator. Following the UI prompts, you can:
 - Load a JSON file containing a Turing machine definition.
 - Provide an input (the machine's initial tape contents).
 - Run the machine step-by-step or until termination.
+
 Note that a Turing machine may never terminate, which will cause the simulator to hang indefinitely.
 
 ## Input Format
@@ -23,9 +24,8 @@ The simulator accepts Turing machines defined in the following JSON format:
 | `  "read": <string>,`         | The symbol on the tape for this transition to occur.                         |
 | `  "to": <integer>,`          | The state after making this transition.                                      |
 | `  "write": <string>,`        | The symbol to write on the tape before moving.                               |
-| `  "move": <"L"/"R"> },`      | How to move the head upon transitioning (`"L"` = left, `"R"` = right).           |
-| `...`                         | (Note: it is not required to define every possible transition)              |
-| `],`                          |                                                                             |
+| `  "move": <"L"/"R"> },`      | How to move the head upon transitioning (`"L"` = left, `"R"` = right).       |
+| `...],`                       | (Note: it is not required to define every possible transition)               |                                                          |
 | `"start": <integer>,`         | The state to start the machine in.                                           |
 | `"finals": [<integer>, ...]}` | List of states that are accept states.                                       |
 
@@ -40,4 +40,6 @@ All code and example machines created by Jason Moore.
 Here are some examples of the Turing machine simulator in action:
 
 ![Example loading machine](./loadingExample.png)
+Loading a machine from a file and viewing its definition
 ![Example running machine](./runningExample.png)
+Simulating the machine (step once and run all)
